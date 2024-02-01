@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 50%);
+        }
+        .select-container {
+            display: flex;
+            justify-content: space-around; /* Changed from space-between to space-around for closer select options */
+            width: 40%; /* Reduced width for closer select options */
+            margin-top: 60px; /* Reduced margin-top for select options to be closer to the heading */
+        }
+        .klase, .names {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>Website Heading</h1>
+    <div class="select-container">
+        <div class="klase">
+            <label for="class">Class:</label>
+            <select id="class" name="class">
+                <option value="10.CV">10.CV</option>
+                <option value="10.ES">10.ES</option>
+                <option value="10.EU">10.EU</option>
+                <option value="10.IT">10.IT</option>
+                <option value="11.CV">11.CV</option>
+                <option value="11.EI">11.EI</option>
+                <option value="11.EU">11.EU</option>
+                <option value="11.SA">11.SA</option>
+                <option value="12.CV">12.CV</option>
+                <option value="12.EU">12.EU</option>
+                <option value="12.SA">12.SA</option>
+                <option value="12.VI">12.VI</option>
+            </select>
+        </div>
+        <div class="names">
+            <label for="names">Names:</label>
+            <select id="names" name="names">
+                <!-- Names will be populated here based on the selected class -
+            </select>
+        </div>
+    </div>
+</body>
+</html>
